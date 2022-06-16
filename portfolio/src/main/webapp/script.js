@@ -16,13 +16,56 @@
  * Adds a random greeting to the page.
  */
 function addRandomGreeting() {
-  const greetings =
-      ['Hello world!', '¡Hola Mundo!', '你好，世界！', 'Bonjour le monde!'];
+  const randomFactsAboutMe =
+      ['I play soccer at my free time', 'I like Billie Eilish', 'Lewis Capaldi is among my favorite artistes', 'I am Ghanaian and i like Ed Sheeran'];
 
   // Pick a random greeting.
-  const greeting = greetings[Math.floor(Math.random() * greetings.length)];
+  const randomFact = randomFactsAboutMe[Math.floor(Math.random() * randomFactsAboutMe.length)];
+
+  const nothing = '';
 
   // Add it to the page.
-  const greetingContainer = document.getElementById('greeting-container');
-  greetingContainer.innerText = greeting;
+    //factsContainer.innerText = randomFact;
+
+        const factsContainer = document.getElementById('facts-container');
+
+
+        if (factsContainer.classList == "hidden"){
+
+            factsContainer.innerText = randomFact;
+
+            factsContainer.classList.remove("hidden");
+
+        }
+
+        else{
+
+            factsContainer.innerText = nothing;
+
+            factsContainer.classList.add("hidden");
+
+
+        }
+        
+        
+
 }
+
+
+
+function displayAbout(){
+
+    document.getElementById("content").innerHTML = ""
+
+    document.getElementById("content").innerHTML += `
+
+    <h1>Abdul Raufs Portfolio</h1>
+      <p>Welcome to my portfolio.</p>
+
+      <div> Hello, I am Abdul Rauf Abdul Karim. A Computer Science student at Amherst College. </div>
+    
+    
+    `
+}
+
+

@@ -4,6 +4,30 @@
   width: 650px;
 }
 
-#greeting-container {
+#facts-container {
   margin-top: 20px;
+}
+
+#top{
+
+    background-color: white;
+
+    height: 100px;
+
+    margin: 0px;
+
+    padding: 0%;
+
+
+}
+
+#buttons{
+
+
+  display: flex;
+
+  justify-content: right;
+
+  margin-top: 30px;
+
 }
