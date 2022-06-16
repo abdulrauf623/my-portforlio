@@ -2,18 +2,37 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>My Portfolio</title>
+    <title> Abdul Raufs Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
   </head>
-  <body>
+  <body background = "imagesFolder/amherst-photo.jpg">
+    
+        <div id = "top">
+
+
+            <div id = "buttons">
+            <button id = "homebutton"> Home </button>
+
+            <button id = "aboutbutton"  onclick="displayAbout()"> About</button>
+
+            <button  id = "projectsbutton"> Personal Projects </button>
+
+            <button id = "contactsbutton"> Contacts </button>
+
+
+             </div>
+        </div>
+
     <div id="content">
-      <h1>My Portfolio</h1>
-      <p>This is my portfolio.</p>
-      <p>Click <a href="/hello">here</a> to see content created by server code.</p>
+      <h1>Abdul Raufs Portfolio</h1>
+      <p>Welcome to my portfolio.</p>
+      <p>Click About to learn about me</p>
       <p>Click here to get a random message:</p>
-      <button onclick="addRandomGreeting()">Hello</button>
-      <div id="greeting-container"></div>
+
+      <button class: "hidden" onclick="addRandomGreeting()">Click Here</button>
+      <div id="facts-container"></div>
     </div>
   </body>
 </html>
+
